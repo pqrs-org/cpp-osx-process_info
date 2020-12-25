@@ -33,6 +33,17 @@ void disable_sudden_termination(void) {
 void enable_sudden_termination(void) {
   pqrs_osx_process_info_enable_sudden_termination();
 }
+
+class scoped_sudden_termination_blocker final {
+public:
+  scoped_sudden_termination_blocker(void) {
+    disable_sudden_termination();
+  }
+
+  ~scoped_sudden_termination_blocker(void) {
+    enable_sudden_termination();
+  }
+};
 } // namespace process_info
 } // namespace osx
 } // namespace pqrs
