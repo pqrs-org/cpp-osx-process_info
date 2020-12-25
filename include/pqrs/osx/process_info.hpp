@@ -1,6 +1,6 @@
 #pragma once
 
-// pqrs::osx::process_info v1.1
+// pqrs::osx::process_info v1.2
 
 // (C) Copyright Takayama Fumihiko 2020.
 // Distributed under the Boost Software License, Version 1.0.
