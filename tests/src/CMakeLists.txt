@@ -13,7 +13,6 @@ project (test)
 
 add_executable(
   test
-  process_info_test.cpp
   test.cpp
   ../../src/pqrs/osx/process_info/objc.m
 )
