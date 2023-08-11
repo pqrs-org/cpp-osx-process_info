@@ -3,7 +3,7 @@
 
 # cpp-osx-process_info
 
-A utility for `NSProcessInfo`.
+A utility for `ProcessInfo`.
 
 ## Requirements
 
@@ -22,8 +22,16 @@ cget install pqrs-org/cget-recipes
 cget install pqrs-org/cpp-osx-process_info
 ```
 
-And then, add `cget/src/pqrs/osx/process_info/objc.m` to your project sources.
+And then configure your project as follows:
+
+- Add `cget/src/pqrs/osx/process_info/impl.swift`
+- Add `cget/include/pqrs/osx/process_info/impl/Bridging-Header.h` as Bridging Header.
 
 ### Manual install
 
 Copy `include/pqrs` directory into your include directory.
+
+And then configure your project as follows:
+
+- Add `src/pqrs/osx/process_info/impl.swift`
+- Add `include/pqrs/osx/process_info/impl/Bridging-Header.h` as Bridging Header.
