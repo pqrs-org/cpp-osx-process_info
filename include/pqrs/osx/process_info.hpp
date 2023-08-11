@@ -8,7 +8,7 @@
 
 // `pqrs::osx::process_info` can be used safely in a multi-threaded environment.
 
-#include "process_info/objc.h"
+#include "process_info/impl/impl.h"
 #include <pqrs/cf/string.hpp>
 
 namespace pqrs {
