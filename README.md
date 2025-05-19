@@ -14,3 +14,8 @@ cpp-osx-process_info depends the following classes.
 ## Install
 
 Copy `include/pqrs` and `vendor/vendor/include` directories into your include directory.
+
+And then configure your project as follows:
+
+- Add `src/pqrs/osx/process_info/PQRSOSXProcessInfoImpl.swift`
+- Add `include/pqrs/osx/process_info/impl/Bridging-Header.h` as Bridging Header.
