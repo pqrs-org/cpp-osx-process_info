@@ -13,6 +13,9 @@
 
 namespace pqrs::osx::process_info {
 [[nodiscard]] inline std::string globally_unique_string() {
+  // ProcessInfo.globallyUniqueString is UUID-like in current Foundation
+  // implementations, but the API does not document a maximum length. Use a
+  // comfortably larger buffer to leave room for future format changes.
   char buffer[256];
 
   pqrs_osx_process_info_create_globally_unique_string(buffer, sizeof(buffer));
