@@ -5,15 +5,9 @@
 
 A utility for `ProcessInfo`.
 
-## Requirements
-
-cpp-osx-process_info depends the following classes.
-
-- [pqrs::cf::string](https://github.com/pqrs-org/cpp-cf-string)
-
 ## Install
 
-Copy `include/pqrs` and `vendor/vendor/include` directories into your include directory.
+Copy `include/pqrs` into your include directory.
 
 And then configure your project as follows:
 
